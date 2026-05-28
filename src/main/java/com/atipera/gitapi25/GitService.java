@@ -1,8 +1,5 @@
-package com.atipera.gitapi25.service;
+package com.atipera.gitapi25;
 
-import com.atipera.gitapi25.client.GitClient;
-import com.atipera.gitapi25.dto.RepositoryDto;
-import com.atipera.gitapi25.dto.RepositoryResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +11,7 @@ public class GitService {
 
     private final GitClient gitClient;
 
-    public List<RepositoryResponseDto> getRepositories(String username) {
+    List<RepositoryResponseDto> getRepositories(String username) {
 
         List<RepositoryDto> repositories = gitClient.getUserRepos(username);
 

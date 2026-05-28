@@ -1,8 +1,5 @@
-package com.atipera.gitapi25.client;
+package com.atipera.gitapi25;
 
-import com.atipera.gitapi25.dto.BranchDto;
-import com.atipera.gitapi25.dto.RepositoryDto;
-import com.atipera.gitapi25.exception.UserNotFoundException;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
@@ -21,7 +18,7 @@ public class GitClient {
                 .build();
     }
 
-    public List<RepositoryDto> getUserRepos(String username) {
+    List<RepositoryDto> getUserRepos(String username) {
         try {
             return this.restClient.get()
                     .uri("/users/{username}/repos", username)
@@ -32,7 +29,7 @@ public class GitClient {
         }
     }
 
-    public List<BranchDto> getBranches(String owner, String repo) {
+    List<BranchDto> getBranches(String owner, String repo) {
         return this.restClient.get()
                 .uri("/repos/{owner}/{repo}/branches", owner, repo)
                 .retrieve()

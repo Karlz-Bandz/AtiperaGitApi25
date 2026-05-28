@@ -1,6 +1,5 @@
-package com.atipera.gitapi25.exception.global;
+package com.atipera.gitapi25;
 
-import com.atipera.gitapi25.exception.UserNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

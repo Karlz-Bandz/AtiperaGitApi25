@@ -1,6 +1,6 @@
-package com.atipera.gitapi25.dto;
+package com.atipera.gitapi25;
 
-public record RepositoryDto(
+record RepositoryDto(
         String name,
         boolean fork,
         OwnerDto owner

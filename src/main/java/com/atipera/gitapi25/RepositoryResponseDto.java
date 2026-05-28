@@ -1,4 +1,4 @@
-package com.atipera.gitapi25.dto;
+package com.atipera.gitapi25;
 
 import java.util.List;
 

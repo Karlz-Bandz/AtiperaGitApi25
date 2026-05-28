@@ -1,7 +1,5 @@
-package com.atipera.gitapi25.controller;
+package com.atipera.gitapi25;
 
-import com.atipera.gitapi25.dto.RepositoryResponseDto;
-import com.atipera.gitapi25.service.GitService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
