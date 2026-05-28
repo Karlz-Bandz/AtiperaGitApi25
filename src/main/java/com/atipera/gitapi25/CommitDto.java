@@ -1,6 +1,6 @@
 package com.atipera.gitapi25;
 
-record CommitDto(
+public record CommitDto(
         String sha
 ) {
 }

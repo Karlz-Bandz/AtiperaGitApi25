@@ -11,7 +11,7 @@ public class GitService {
 
     private final GitClient gitClient;
 
-    List<RepositoryResponseDto> getRepositories(String username) {
+    public List<RepositoryResponseDto> getRepositories(String username) {
 
         List<RepositoryDto> repositories = gitClient.getUserRepos(username);
 

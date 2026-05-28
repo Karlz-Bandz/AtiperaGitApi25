@@ -18,7 +18,7 @@ public class GitClient {
                 .build();
     }
 
-    List<RepositoryDto> getUserRepos(String username) {
+    public List<RepositoryDto> getUserRepos(String username) {
         try {
             return this.restClient.get()
                     .uri("/users/{username}/repos", username)
@@ -29,7 +29,7 @@ public class GitClient {
         }
     }
 
-    List<BranchDto> getBranches(String owner, String repo) {
+    public List<BranchDto> getBranches(String owner, String repo) {
         return this.restClient.get()
                 .uri("/repos/{owner}/{repo}/branches", owner, repo)
                 .retrieve()

@@ -1,6 +1,6 @@
 package com.atipera.gitapi25;
 
-record OwnerDto(
+public record OwnerDto(
         String login
 ) {
 }

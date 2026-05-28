@@ -1,6 +1,6 @@
 package com.atipera.gitapi25;
 
-record BranchDto(
+public record BranchDto(
         String name,
         CommitDto commit
 ) {
